@@ -1,0 +1,39 @@
+@IBOutlet weak var blBtn: UIButton!
+    @IBOutlet weak var rdBtn: UIButton!
+    @IBOutlet weak var ylwBtn: UIButton!
+    @IBOutlet weak var grnBtn: UIButton!
+    
+    @IBAction func blueBtn(_ sender: Any) {
+        view.backgroundColor = UIColor.blue
+        blBtn.backgroundColor = UIColor.white
+        
+        rdBtn.backgroundColor = UIColor.black
+        ylwBtn.backgroundColor = UIColor.black
+        grnBtn.backgroundColor = UIColor.black
+    }
+    
+    @IBAction func redBtn(_ sender: Any) {
+        view.backgroundColor = UIColor.red
+        rdBtn.backgroundColor = UIColor.white
+        
+        blBtn.backgroundColor = UIColor.black
+        ylwBtn.backgroundColor = UIColor.black
+        grnBtn.backgroundColor = UIColor.black
+    }
+    @IBAction func yellowBtn(_ sender: Any) {
+        view.backgroundColor = UIColor.yellow
+        ylwBtn.backgroundColor = UIColor.white
+        
+        blBtn.backgroundColor = UIColor.black
+        rdBtn.backgroundColor = UIColor.black
+        grnBtn.backgroundColor = UIColor.black
+    }
+    @IBAction func greenBtn(_ sender: Any) {
+        view.backgroundColor = UIColor.green
+        grnBtn.backgroundColor = UIColor.white
+        
+        blBtn.backgroundColor = UIColor.black
+        rdBtn.backgroundColor = UIColor.black
+        ylwBtn.backgroundColor = UIColor.black
+    }
+    

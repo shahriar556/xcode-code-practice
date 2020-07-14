@@ -1,0 +1,21 @@
+
+    
+    @IBOutlet weak var sControll: UISegmentedControl!
+    
+    @IBAction func sAction(_ sender: Any) {
+        switch sControll.selectedSegmentIndex {
+        case 0:
+            view.backgroundColor = UIColor.red
+        case 1:
+            view.backgroundColor = UIColor.blue
+        case 2:
+            view.backgroundColor = UIColor.yellow
+        case 3:
+            view.backgroundColor = UIColor.green
+        default:
+            view.backgroundColor = UIColor.white
+        }
+    }
+    
+    
+    

@@ -1,0 +1,15 @@
+func showToast() {
+        let toastMessage = UILabel()
+        toastMessage.frame = CGRect(x: 100, y: 100, width: 200, height: 60)
+        toastMessage.text = "Hi Liza"
+        toastMessage.textAlignment = .center
+        toastMessage.backgroundColor = UIColor.blue
+        toastMessage.textColor = UIColor.white
+        
+        self.view.addSubview(toastMessage)
+        UIView.animate(withDuration: 2.0, delay: 1.0, options: .curveEaseOut, animations: {
+            toastMessage.alpha = 0.0
+        }){ (iscompleted) in
+            toastMessage.removeFromSuperview()
+        }
+    }

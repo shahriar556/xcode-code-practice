@@ -1,0 +1,28 @@
+import UIKit
+let countries = ["Bangladesh","Pakisthan","India","Afganisthan"]
+class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource{
+    
+    
+   
+    @IBOutlet weak var label: UILabel!
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return countries.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return countries[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        return label.text = countries[row]
+    }
+    
+
+    
+    
+}
